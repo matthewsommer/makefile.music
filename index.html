@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Makefile – electronic music artist" />
+  <meta name="description" content="Makefile is a forward-thinking electronic music project blending rhythm with logic. Minimal, melodic, modular." />
+  <meta name="keywords" content="Makefile, electronic music, synth, modular, artist, live set, techno, minimal, band" />
+  <meta name="author" content="Makefile" />
+
+  <!-- Open Graph tags for social sharing -->
+  <meta property="og:title" content="Makefile – Electronic Music Artist" />
+  <meta property="og:description" content="Makefile™" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://makefile.music" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
   <title>Makefile</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
@@ -13,24 +25,24 @@
       font-family: 'Orbitron', sans-serif;
       background: #0d0d0d;
       color: #fff;
-      height: 100%;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
     }
+
     .container {
       max-width: 600px;
       padding: 2rem;
+      text-align: center;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
+
     .links a {
       color: #00ffd0;
       text-decoration: none;
@@ -38,8 +50,17 @@
       font-size: 1.2rem;
       transition: color 0.2s ease;
     }
+
     .links a:hover {
       color: #ffffff;
+    }
+
+    footer {
+      font-size: 0.7rem;
+      color: #555;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -47,28 +68,28 @@
   <div class="container">
     <h1>Makefile</h1>
 
-        <div style="
-        background: #1e1e1e;
-        border-radius: 8px;
-        overflow: hidden;
-        margin: 2rem auto;
-        max-width: 720px;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-        text-align: left;
-        font-family: 'Courier New', monospace;
+    <div style="
+      background: #1e1e1e;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 2rem auto;
+      max-width: 720px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+      text-align: left;
+      font-family: 'Courier New', monospace;
     ">
-        <div style="
+      <div style="
         background: #2c2c2c;
         padding: 0.5rem 1rem;
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        ">
+      ">
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
         <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
-        </div>
-        <pre style="
+      </div>
+      <pre style="
         margin: 0;
         padding: 1.25rem 1.5rem;
         font-size: 0.9rem;
@@ -76,30 +97,35 @@
         color: #f2f2f2;
         white-space: pre;
         overflow-x: auto;
-        "><code>
+      "><code>
 # -----------------------------------------------------
 # 🎛️  Makefile – Modular Synth Patterns
 # -----------------------------------------------------
 
 build-ep:  ## 📀 Compile & export full EP
-    @echo "🚀 Dropping the bass..."
-    @echo "🥁 Kick sequence initialized."
-    @echo "🎵 Boom... Boom... Boom..."
-    @echo "✨ Adding snare hits..."
-    @echo "🌀 Groove locked in."
-    @echo "💾 Rendering track..."
-    @sleep 2
-    @echo "✅ Exported: makefile_001.wav"
-
-    </code></pre>
+	@echo "🚀 Dropping the bass..."
+	@echo "🥁 Kick sequence initialized."
+	@echo "🎵 Boom... Boom... Boom..."
+	@echo "✨ Adding snare hits..."
+	@echo "🌀 Groove locked in."
+	@echo "💾 Rendering track..."
+	@sleep 2
+	@echo "✅ Exported: makefile_001.wav"
+      </code></pre>
     </div>
-    
-    
-        
-    
+
     <div class="links">
       <a href="https://www.instagram.com/makefile.music" target="_blank">Instagram</a>
     </div>
   </div>
+
+  <footer>
+    Makefile™ &nbsp;&middot;&nbsp; © <span id="year"></span> &nbsp;&middot;&nbsp; All rights reserved
+  </footer>
+
+  <script>
+    // Auto-set current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
