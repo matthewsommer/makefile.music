@@ -3,124 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Makefile is a forward-thinking electronic music project blending rhythm with logic. Minimal, melodic, modular." />
-  <meta name="keywords" content="Makefile, electronic music, synth, modular, artist, live set, techno, minimal, band" />
+  <meta name="description" content="Makefile is a forward-thinking electronic music project blending rhythm with logic." />
+  <meta name="keywords" content="Makefile, electronic music, synth, modular, techno, minimal" />
   <meta name="author" content="Makefile" />
-
-  <!-- Open Graph tags for social sharing -->
-  <meta property="og:title" content="Makefile" />
+  <meta property="og:title" content="Makefile – Electronic Music Artist" />
   <meta property="og:description" content="Makefile™" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://makefile.music" />
-
-  <!-- Favicon (optional) -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
   <title>Makefile</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    color: #ccc;
-    min-height: 100vh;
-    background: linear-gradient(145deg, #111111, #1b1b1b);
-    background-blend-mode: overlay;
-    background-color: #111111;
-    background-size: cover;
-    background-repeat: repeat;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 1rem;
-  }
-  
-  h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    margin-bottom: 1.2rem;
-    color: #f4f4f4;
-    text-shadow: 0 0 6px rgba(255,255,255,0.08);
-    text-align: center;
-  }
-  
-  .links {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  
-  .links a {
-    color: #9ae3c1;
-    text-decoration: none;
-    margin: 0 0.75rem;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-    display: inline-block;
-  }
-  
-  .links a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 6px rgba(154,227,193,0.3);
-  }
-  
-  pre {
-  margin: 2rem 0 1rem;
-  font-size: 0.75rem; /* smaller for mobile */
-  line-height: 1.5;
-  color: #f2f2f2;
-  font-family: 'Courier New', monospace;
-  white-space: pre;
-  overflow-x: auto;
-  background: none;
-  padding: 1rem;
-  box-sizing: border-box;
-  text-align: left;
-  width: 100%;
-  max-width: 720px;
-}
-
-  
-  footer {
-    font-size: 0.65rem;
-    color: #444;
-    text-align: center;
-    padding: 0.75rem;
-    margin-top: 2rem;
-    opacity: 0.6;
-    width: 100%;
-    max-width: 720px;
-  }
-  </style>
 </head>
 <body>
+  <main>
     <h1>Makefile</h1>
-
-    <div style="
-    background: linear-gradient(145deg, #111111, #1b1b1b);
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 2rem auto;
-    width: 100%;
-    max-width: 720px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-    text-align: left;
-    font-family: 'Courier New', monospace;
-  ">
-      <div style="
-        background: #2c2c2c;
-        padding: 0.5rem 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      ">
-        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
-        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
-        <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
+    <section class="terminal">
+      <div class="terminal-header">
+        <span class="btn red"></span>
+        <span class="btn yellow"></span>
+        <span class="btn green"></span>
       </div>
       <pre><code>
-# -----------------------------------------------------
+# ---------------------------------------------
 # 🎛️  Makefile – Modular Synth Patterns
-# -----------------------------------------------------
+# ---------------------------------------------
 
 build-ep:  ## 📀 Compile & export full EP
 	@echo "🚀 Dropping the bass..."
@@ -132,15 +39,16 @@ build-ep:  ## 📀 Compile & export full EP
 	@sleep 2
 	@echo "✅ Exported: makefile_001.wav"
       </code></pre>
-    </div>
+    </section>
 
     <div class="links">
       <a href="https://www.instagram.com/makefile.music" target="_blank">Instagram</a>
     </div>
 
-  <footer>
-    Makefile™ &nbsp;&middot;&nbsp; © <span id="year"></span> &nbsp;&middot;&nbsp; All rights reserved
-  </footer>
+    <footer>
+      Makefile™ &nbsp;&middot;&nbsp; © <span id="year"></span> &nbsp;&middot;&nbsp; All rights reserved
+    </footer>
+  </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
