@@ -1,104 +1,38 @@
-/* style.css */
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Orbitron', sans-serif;
-    color: #ccc;
-    background: #111111;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+  background: #111111;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.12em;
+}
+
+.cover {
+  display: block;
+  width: 16.666vw;
+  min-width: 220px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .cover {
+    width: 70vw;
+    min-width: 0;
   }
-  
-  main {
-    width: 100%;
-    max-width: 720px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    color: #f4f4f4;
-    text-shadow: 0 0 6px rgba(255,255,255,0.08);
-    margin-bottom: 2rem;
-  }
-  
-  .terminal {
-    background: #0d0d0d;
-    border-radius: 6px;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 0 20px rgba(0, 0, 0, 0.5);
-    font-family: 'Courier New', monospace;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    text-align: left;
-  }
-  
-  .terminal-header {
-    background: #1c1c1c;
-    padding: 0.5rem 1rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  .terminal-header .btn {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .red { background: #ff5f56; }
-  .yellow { background: #ffbd2e; }
-  .green { background: #27c93f; }
-  
-  pre {
-    background-color: #0d0d0d;
-    margin: 0;
-    font-size: 0.78rem;
-    line-height: 1.5;
-    padding: 1.25rem 1rem;
-    overflow-x: auto;
-    white-space: pre;
-    color: #c0c0c0;
-  }
-  
-  pre code::before {
-    content: "➜  make help\A";
-    white-space: pre;
-    display: block;
-    color: #6ff;
-    margin-bottom: 1em;
-    font-weight: bold;
-  }
-  
-  .links {
-    margin: 1.5rem 0;
-  }
-  
-  .links a {
-    color: #9ae3c1;
-    text-decoration: none;
-    margin: 0 0.75rem;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-  }
-  
-  .links a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 6px rgba(154,227,193,0.3);
-  }
-  
-  footer {
-    font-size: 0.7rem;
-    color: #444;
-    opacity: 0.6;
-    text-align: center;
-    margin-top: 1rem;
-  }
+}
   
